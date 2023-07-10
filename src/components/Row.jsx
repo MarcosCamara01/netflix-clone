@@ -27,7 +27,7 @@ export const Row = ({ title, fetchUrl }) => {
     };
 
     if (isDesktop) {
-        settings.slidesToShow = 9;
+        settings.slidesToShow = 9.5;
         settings.slidesToScroll = 8;
     }
 
@@ -57,14 +57,12 @@ export const Row = ({ title, fetchUrl }) => {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            setMovies([...request.data.results, request.data.results[0]]);
+            setMovies(request.data.results);
             return request;
         }
 
         fetchData();
     }, [fetchUrl]);
-
-    console.log(movies)
 
     return (
         <div className='row'>
@@ -80,6 +78,7 @@ export const Row = ({ title, fetchUrl }) => {
                         />
                     )
                 )}
+                <div></div>
             </Slider>
         </div>
     );
