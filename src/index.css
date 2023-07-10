@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto-Black.woff2') format('woff2');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: 20px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 20px;
+  z-index: 10;
+}
+
+.slick-list {
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .slick-prev::before,
+  .slick-next::before {
+    display: none;
+  }
+
+  .slick-list {
+    padding: 0;
+  }
+
+  .slick-slider {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .banner__contents, .row h2, .nav__contents{
+    width: 90%;
+    margin: 0 auto;
+  }
+}

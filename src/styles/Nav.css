@@ -1,0 +1,31 @@
+.nav {
+    position: fixed;
+    padding: 10px 45px;
+    width: 100%;
+    z-index: 11;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    transition-timing-function: ease-in;
+    transition: all 0.3s;
+}
+
+.nav__contents {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__black {
+    background-color: rgb(20, 20, 20);
+}
+
+.nav__logo {
+    width: 80px;
+}
+
+.nav__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
