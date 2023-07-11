@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/Nav.css";
+import Logo from "../assets/img/LogoNetflix.png"
+import avatar from "../assets/img/Netflix-avatar.png"
 
 export const Nav = () => {
 
@@ -22,12 +24,12 @@ export const Nav = () => {
         <div className={`nav ${show && "nav__black"}`}>
             <div className="nav__contents">
                 <img
-                    src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                    src={Logo}
                     alt="Netflix Logo"
                     className='nav__logo'
                 />
                 <img
-                    src="https://i.pinimg.com/550x/0c/91/71/0c9171ce965fb4ec175c2b001516e754.jpg"
+                    src={avatar}
                     alt="Netflix Avatar"
                     className='nav__avatar'
                 />
