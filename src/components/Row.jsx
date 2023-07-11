@@ -32,24 +32,24 @@ export const Row = ({ title, fetchUrl }) => {
     }
 
     if (isDesktopSmall) {
-        settings.slidesToShow = 5;
+        settings.slidesToShow = 5.5;
         settings.slidesToScroll = 4;
     }
 
     if (isTablet) {
-        settings.slidesToShow = 4;
+        settings.slidesToShow = 4.5;
         settings.slidesToScroll = 3;
         settings.draggable = false;
     }
 
     if (isTabletMini) {
-        settings.slidesToShow = 3;
+        settings.slidesToShow = 3.5;
         settings.slidesToScroll = 2;
         settings.draggable = false;
     }
 
     if (isMobile) {
-        settings.slidesToShow = 2;
+        settings.slidesToShow = 2.5;
         settings.slidesToScroll = 2;
         settings.draggable = false;
     }
@@ -74,7 +74,7 @@ export const Row = ({ title, fetchUrl }) => {
                             className="row__poster"
                             key={index}
                             src={`${base_url}${movie.poster_path}`}
-                            alt={movie.name}
+                            alt={movie.title}
                         />
                     )
                 )}

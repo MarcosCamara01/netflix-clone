@@ -61,14 +61,16 @@ body {
   opacity: 1;
 }
 
-.slick-prev {
-  left: 0px;
+.slick-prev, .slick-next  {
   z-index: 10;
 }
 
+.slick-prev {
+  left: 5px;
+}
+
 .slick-next {
-  right: 20px;
-  z-index: 10;
+  right: 30px;
 }
 
 .slick-list {

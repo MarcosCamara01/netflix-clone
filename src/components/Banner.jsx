@@ -36,6 +36,8 @@ export const Banner = () => {
         return string?.length > n ? string.substr(0, n - 1) + "..." : string;
     }
 
+    const releaseYear = movie.first_air_date ? movie.first_air_date.split("-")[0] : "";
+
     return (
         <header
             className='banner'
@@ -50,6 +52,7 @@ export const Banner = () => {
                 <h1 className="banner__title">
                     {truncate(movie?.title || movie?.name || movie?.original_name, isMobile ? 15 : 30)}
                 </h1>
+                <div className='info'><span className='date'>{releaseYear}</span><span className='vote'>{movie.vote_average}</span></div>
                 <p className='banner__description'>
                     {truncate(movie?.overview,300)}
                 </p>
